@@ -47,16 +47,20 @@ int main()
 list1.resize(distance(list1.begin(), unique(list1.begin(), list1.end())));
 list1.remove(30);
     //Diplay the content of list1 using iterator
+
+    cout << "Diplay the content of list1 using iterator" << endl;
     for(auto i = list1.begin(); i != list1.end(); i++) {
         cout << *i << ", ";
     }
     cout << endl;
     //Display the list1 in reverse
+    cout << "Display the list1 in reverse" << endl;
     for(auto i = list1.rbegin(); i != list1.rend(); i++) {
         cout << *i << ", ";
     }
     cout << endl;
     //Find 25 in the list. If it's found, display "Found 25";otherwise, display "Not found 25"
+    cout << "Find 25 in the list. If it's found, display \"Found 25\"; otherwise, display \"Not found 25\"" << endl;
     if(find(list1.begin(), list1.end(), 25) == list1.end()) {
         cout << "Not ";
     }

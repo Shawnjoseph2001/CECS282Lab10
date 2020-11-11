@@ -19,6 +19,7 @@ int main()
         v1.push_back(arr[i]);
     }
     //Display the contents of vector v1
+    cout << "Display the contents of vector v1" << endl;
     for(double i: v1) {
         cout << i << ", ";
     }
@@ -31,6 +32,7 @@ int main()
 
 
     //Display the content of vector v1 after sorting
+    cout << "Display the content of vector v1 after sorting" << endl;
     for(double i: v1) {
         cout << i << ", ";
     }
@@ -42,6 +44,7 @@ int main()
 
 
     //Display the content of vector v1
+    cout << "Reversing the Vector v1 Display the content of vector v1" << endl;
     for(double i: v1) {
         cout << i << ", ";
     }
@@ -49,27 +52,34 @@ int main()
 
 
     //Display the maximum element of vector v1
+    cout << "Display the maximum element of vector v1" << endl;
     cout << *max_element(v1.begin(), v1.end()) << endl;
     //Display the minimum element of vector v1
+    cout << "Display the minimum element of vector v1" << endl;
     cout << *min_element(v1.begin(), v1.end()) << endl;
 
 
 
     //Display the accumulation of all elements in vector v1
     // Starting the summation from 0
+    cout << "Display the accumulation of all elements in vector v1 Starting the summation from 0" << endl;
     cout << accumulate(v1.begin(), v1.end(), 0.0) << endl;
 
 
     // Counts the occurrences of 2.2 from 1st to last element
+    cout << "Counts the occurrences of 2.2 from 1st to last element ";
    int num2_2 = count(v1.begin(), v1.end(), 2.2);
     //Display the counts
+    cout << "Display the counts" << endl;
     cout << num2_2 << endl;
 
 
 
     // Delete second element of vector
+    cout << "Delete second element of vector";
     v1.erase(v1.begin() + 1);
     //Display the v1 after erasing the element
+    cout << " Display the v1 after erasing the element" << endl;
     for(double d:v1) {
         cout << d << ", ";
     }
